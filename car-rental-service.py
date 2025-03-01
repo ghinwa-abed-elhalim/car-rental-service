@@ -9,5 +9,9 @@ class vehicle:
         print(f"vehicle {self.brand} {self.model}, year: {self.year}, rental price: {self.rental_price_per_days}")
 
     def rental_cost(self, days):
-    return self.rental_price_per_days * days 
+     return self.rental_price_per_days * days
+    
+    def get_rental_price_per_days(self):
+        return self.rental_price_per_days
+
 
