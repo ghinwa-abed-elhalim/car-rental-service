@@ -16,5 +16,12 @@ class vehicle:
     
     def set_rental_price_per_days(self, new_price):
        self.rental_price_per_days = new_price
+
+class car(vehicle):
+   def __init__(self, brand, model, year, rental_price_per_days, seating_capacity):
+      super().__init__(brand, model, year, rental_price_per_days)
+      self.seating_capacity = seating_capacity
+    def display_info(self):
+       print(f"vehicle {self.brand} {self.model}, year: {self.year}, rental price: {self.get_rental_price_per_days}, seating capacity: {self.seating_capacity}")
        
 
