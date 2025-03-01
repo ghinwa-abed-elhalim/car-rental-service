@@ -13,5 +13,8 @@ class vehicle:
     
     def get_rental_price_per_days(self):
         return self.rental_price_per_days
-
+    
+    def set_rental_price_per_days(self, new_price):
+       self.rental_price_per_days = new_price
+       
 
